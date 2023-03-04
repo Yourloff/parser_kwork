@@ -5,4 +5,5 @@ require_relative 'lib/kwork'
 scripts_bots = '41'
 attr = '211'
 
-Kwork.new(c: scripts_bots, attr: attr)
+kwork = Kwork.new(c: scripts_bots, attr: attr)
+kwork

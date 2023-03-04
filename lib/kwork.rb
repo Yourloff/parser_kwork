@@ -22,10 +22,14 @@ class Kwork
 
     array_orders.map do |order|
       {
+        id: order['id'],
+        categoryName: order['categoryName'],
+        parentCategoryName: order['parentCategoryName'],
         name: order['name'],
         description: order['description'],
         url: order['url'],
-        price: order['priceLimit']
+        price: order['priceLimit'],
+        offers: order['kworkCount']
       }
     end
   end
